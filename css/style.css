@@ -1,0 +1,2438 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+ol,
+ul {
+  list-style: none;
+}
+del {
+  text-decoration: line-through;
+}
+body {
+  font-family: "Causten Semi", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #000;
+  overflow-x: hidden;
+  min-width: 320px;
+  font-weight: 500;
+}
+input,
+textarea,
+select {
+  font-family: "Causten Semi", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+a {
+  color: #000;
+}
+.thumb {
+  display: block;
+}
+.thumb img {
+  display: block;
+  width: 100%;
+}
+p {
+  line-height: 1.6em;
+  font-size: 16px;
+  font-family: "Causten Semi", Arial;
+  font-weight: 500;
+  color: #000;
+}
+.hidden {
+  display: none;
+}
+br.clear {
+  clear: both;
+  line-height: 0;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+.flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten/Causten-SemiBold.woff") format("woff"),
+    url("../fonts/causten/Causten-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Causten";
+  src: url("../fonts/causten/Causten-Bold.woff2") format("woff2"),
+    url("../fonts/causten/Causten-Bold.woff2") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+::placeholder {
+  color: #9b9b9b;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #9b9b9b;
+}
+::-ms-input-placeholder {
+  color: #9b9b9b;
+}
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+header h1.left {
+  padding-left: 50px;
+}
+
+header h1.left a {
+  width: 100%;
+  display: block;
+}
+header h1.left a img {
+  width: 100%;
+  display: block;
+}
+nav.middle{
+
+}
+nav.middle ul {
+  display: flex;
+  width: 100%;
+}
+nav.middle ul li a.one {
+  font-weight: bold;
+  color: #2a2f2f;
+}
+nav.middle ul li {
+  margin-right: 40px;
+}
+nav.middle ul li a:hover {
+  border-bottom: 1px solid #3c4242;
+  color: #3c4242;
+}
+nav.middle ul li a:last-child {
+  margin-right: 0;
+}
+nav.middle ul li a {
+  font-size: 22px;
+  color: #807d7e;
+}
+header nav.middle ul {
+  display: flex;
+}
+header nav.middle ul li {
+  margin-right: 35px;
+}
+header nav.middle ul li:last-child {
+  margin-right: 0;
+}
+header nav.middle ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #807d7e;
+}
+header span {
+  padding-right: 50px;
+}
+/* ---------------- */
+header .icons{
+	position: absolute;
+	top: 36px;
+	right: 10%;
+} 
+header .icons .details{
+	position: relative;
+} 
+header .icons .details #hover{
+	z-index: 2;
+} 
+header .icons .details #hover h1{
+  padding-top: 10px;
+}
+header .icons .details #hover h1 img {
+  display: none;
+} 
+header .icons .details #hover ul{
+	position: absolute;
+	display: none;	
+  right: -16px;
+  top: 5px;
+}
+header .icons .details #hover ul li{
+  display: flex;
+}
+header .icons .details #hover ul li span{
+  display: none;
+  margin-right: 10px;
+}
+header .icons .details #hover ul.detail{
+  position: absolute;
+  right: 45px;
+  top: 50px;
+  background: #fff;
+}
+ header .icons .details #hover ul.detail li {
+	width: 100%;
+	text-align: center;
+	background: #fff;
+  display: flex;
+  margin-bottom: 10px;
+} 
+header .icons .details #hover ul li span a{
+	width: 40px;
+	height: 20px;
+	background: #f6f6f6;
+	border-radius: 5px;
+	padding: 7px;
+}
+header .icons .details #hover ul li a{
+	color: #807d7e;
+
+}
+header .icons .details #hover:hover ul{
+	display: block;
+}
+header .icons .details #hover ul.detail li a:hover {
+  border-bottom: 1px solid #3c4242;
+  color: #3c4242;
+}
+ /* ------------------------------------- */ */
+header span div.form {
+  align-items: center;
+}
+div.form button {
+  padding: 12px 20px 12px 20px;
+  border: -1.5px solid #9b9b9b;
+  background-color: #f6f6f6;
+  border-radius: 7px;
+  width: 100%;
+}
+div.form button span{
+  display: flex;
+}
+div.form button span img {
+  margin-right: 20px;
+}
+div.form button span input {
+  font-weight: 400;
+}
+header span {
+  border: -1px solid #807d7e;
+}
+header span ul {
+  display: flex;
+}
+header span ul li a {
+  margin-right: 12px;
+}
+header span ul li a img {
+  padding: 12px;
+  background-color: #f6f6f6;
+  border-radius: 8px;
+}
+#spotlight {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background: url(../images/bg-1.jpg);
+  background-position: right top -50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#spotlight .banner .contant {
+    padding-left: 14%;
+    padding-top: 8%;
+
+}
+
+#spotlight .banner .contant .overlay {
+  display: none;
+}
+#spotlight:hover .contant .overlay {
+  display: block;
+  position: absolute;
+}
+#spotlight .banner .contant .overlay h5 {
+  font-size: 42px;
+  color: #fff;
+  font-weight: 700;
+  display: block;
+}
+#spotlight .banner .contant .overlay h1 {
+  font-size: 78px;
+  color: #fff;
+  font-weight: 700;
+  display: block;
+  margin-top: 14px;
+}
+#spotlight .banner .contant .overlay h4 {
+  font-size: 42px;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 44px;
+  display: block;
+}
+#spotlight .banner a.button {
+  display: inline;
+  padding: 16px 72px;
+  background-color: #fff;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 24px;
+  position: absolute;
+  top: 80%;
+}
+#spotlight .banner a img {
+  color: #fff;
+}
+#spotlight .banner a img.arrowleft {
+  width: 5%;
+  height: 5%;
+  position: absolute;
+  top: 40%;
+  left: 1%;
+}
+#spotlight .banner a img.arrowright {
+  width: 5%;
+  height: 5%;
+  position: absolute;
+  top: 40%;
+  right: 1%;
+}
+#spotlight .banner span {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  border-radius: 8px;
+}
+#spotlight span ul {
+  display: flex;
+}
+#spotlight span ul li {
+  border-radius: 8px;
+}
+#spotlight span ul li a img {
+  border-radius: 8px;
+}
+#spotlight .banner a img {
+  color: #fff;
+  width: 100%;
+}
+#spotlight span ul {
+  display: flex;
+  width: 100%;
+}
+
+#discount {
+  margin-top: 4%;
+}
+#discount .summer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#discount .summer .left {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 48%;
+  border-radius: 12px;
+  height: 409px;
+}
+#discount .summer .left ul {
+  padding-left: 10%;
+  padding-top: 10%;
+}
+#discount .summer .left ul li h6 {
+  font-weight: 700;
+  font-size: 37px;
+  color: #fff;
+}
+#discount .summer .left ul li h2 {
+  display: flex;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  padding-top: 40px;
+  line-height: 1.6;
+}
+#discount .summer .left ul li h3 {
+  padding-top: 60px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  padding-bottom: 30px;
+  line-height: 1.6;
+}
+#discount .summer .left ul li a.button {
+  font-weight: 700;
+  font-size: 34px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+#discount .summer .right {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 48%;
+  border-radius: 12px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  margin-right: 25px;
+  height: 390px;
+}
+#discount .summer .right ul {
+  padding-left: 10%;
+  padding-top: 10%;
+}
+#discount .summer .right ul li h6 {
+  font-weight: 700;
+  font-size:37px;
+  color: #fff;
+  line-height: 30px;
+}
+#discount .summer .right ul li h2 {
+  display: flex;
+  font-weight: 700;
+  font-size: 40px;
+  color: #fff;
+  padding-top: 30px;
+  line-height: 1.6;
+}
+#discount .summer .right ul li h3 {
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: 24px;
+  color: #fff;
+  padding-bottom: 34px;
+}
+#discount .summer .right ul li a.button {
+  font-weight: 700;
+  font-size: 34px;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+#newarrival {
+  display: block;
+  position: relative;
+  margin-top: 3%;
+}
+#newarrival .title {
+  width: 324px;
+}
+#newarrival .title img {
+  color: #8a33fd;
+  height: 37px;
+}
+#newarrival .title h1 {
+  margin-top: -42px;
+  margin-left: 24px;
+  font-size: 34px;
+  font-weight: 600;
+}
+#newarrival div.details {
+  margin-top: 3%;
+}
+#newarrival div.details ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#newarrival div.details ul li{
+  width: 21%;
+
+}
+#newarrival div.details ul li:first-child {
+margin-top: 10%;
+width: 1.5%;
+}
+#newarrival div.details ul li:last-child {
+  margin-top: 10%;
+  width: 1.5%;
+  }
+#newarrival div.details ul li img {
+  width: 100%;
+}
+#newarrival div.details ul li:first-child img {
+  width: 100%;
+}
+#newarrival div.details ul li:last-child img {
+  width: 100%;
+}
+
+#newarrival div.details ul li h1 {
+  padding-top: 6%;
+  font-weight: 700;
+  font-size: 20px;
+  color: #3c4242;
+}
+#poster {
+  display: block;
+  margin-top: 4%;
+}
+#poster div.bottom {
+  display: flex;
+  flex-wrap: wrap;
+}
+#poster div.bottom .content {
+  margin-top: 20%;
+  margin-left: 10%;
+}
+#poster div.bottom div.left {
+  background-image: url(../images/bg-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:50%;
+  height: 600px;
+  border-bottom-left-radius: 12px;
+}
+#poster div.bottom div.left h1 {
+  display: inline-block block;
+  color: #fff;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 50px;
+}
+#poster div.bottom div.left p {
+  display: block;
+  font-weight: 300;
+  font-size: 20px;
+  color: #fff;
+  padding-top: 4%;
+  padding-bottom: 10%;
+  line-height: 28px;
+}
+#poster div.bottom div.left a.button {
+  background-color: #fff;
+  padding: 12px 44px;
+  border: 1px solid #9b9b9b;
+  border-radius: 8px;
+}
+#poster div.bottom div.right {
+  background-image: url(../images/bg-5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 600px;
+  border-bottom-right-radius: 12px;
+}
+
+#mens_category {
+  position: relative;
+  margin-top: 4%;
+}
+#mens_category .title img {
+  color: #8a33fd;
+  height: 37px;
+}
+#mens_category .title h1 {
+  margin-top: -42px;
+  margin-left: 24px;
+  font-size: 34px;
+  font-weight: 600;
+}
+#mens_category div ul {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#mens_category div ul li {
+  width: 23%;
+}
+#mens_category div ul li:nth-child(5) {
+  margin-top: 2%;
+}
+#mens_category div ul li:nth-child(6) {
+  margin-top: 2%;
+}
+#mens_category div ul li:nth-child(7) {
+  margin-top: 2%;
+}
+#mens_category div ul li:nth-child(8) {
+  margin-top: 2%;
+}
+
+#mens_category div ul li .mens_img {
+  width: 100%;
+  background-repeat: no-repeat;
+}
+#mens_category div ul li span {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+#mens_category div ul li span h3 {
+  padding-top: 4%;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2a2f2f;
+}
+#mens_category div ul li span a{
+  margin-top: 6%;
+}
+#mens_category div ul li span a img{
+  width: 100%;
+
+}
+#mens_category div ul li a.explore {
+  font-weight: 500;
+  font-size: 14px;
+  color: #7f7f7f;
+}
+#women_category {
+  position: relative;
+  margin-top: 4%;
+}
+#women_category .title img {
+  color: #8a33fd;
+  height: 37px;
+}
+#women_category span h1 {
+  margin-top: -42px;
+  margin-left: 24px;
+  font-size: 34px;
+  font-weight: 600;
+}
+#women_category ul {
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#women_category ul li {
+  width: 23%;
+}
+#women_category ul li a {
+  margin-top: 18px;
+}
+#women_category ul li .womens_img {
+  width: 100%;
+  background-repeat: no-repeat;
+}
+#women_category ul li:nth-child(4) {
+  margin-right: 0;
+}
+#women_category ul li span {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+#women_category ul li span h3 {
+  margin-top: 5%;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2a2f2f;
+}
+#women_category ul li span a img {
+  width: 100%;
+}
+#women_category ul li a.explore {
+  font-weight: 500;
+  font-size: 14px;
+  color: #7f7f7f;
+}
+#brand {
+  margin-top: 5%;
+}
+#brand .wrapper {
+  background-color: #3c4242;
+  border-radius: 12px;
+}
+#brand ul li {
+  width: 19%;
+}
+#brand  h1 {
+  padding-top: 40px;
+  text-align: center;
+  color: #fff;
+  font-weight: 800;
+  font-size: 50px;
+}
+#brand  p {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 22px;
+  color: #fff;
+}
+#brand  p span {
+  color: #fbd103;
+}
+#brand .logo {
+  padding-left:10%;
+  padding-top:3%;
+  padding-right:8%;
+}
+#brand .logo ul {
+  display: flex;
+  justify-content: space-between;
+}
+#brand .logo ul li img {
+  border: 1px solid #3c4242;
+  background-color: #fff;
+  width: 100%;
+  height: 57%;
+  margin-bottom: 10%;
+}
+#brand .logo img {
+  width: 150px;
+  height: 100px;
+  border-radius: 12px;
+  margin-bottom: 80px;
+}
+#limlight {
+  margin-top: 4%;
+  display: flex;
+}
+#limlight .title img {
+  color: #8a33fd;
+  height: 37px;
+}
+#limlight span h1 {
+  margin-top: -42px;
+  margin-left: 24px;
+  font-size: 34px;
+  font-weight: 600;
+}
+#limlight .fasion {
+  margin-top: 3%;
+}
+#limlight .fasion ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#limlight .fasion ul li {
+  width: 23.5%;
+}
+#limlight .fasion ul li .first {
+  position: relative;
+}
+#limlight .fasion ul li .icon {
+  position: absolute;
+  left:83%;
+  top: 6%;
+  background-color: #f6f6f6;
+  padding: 10px;
+  border-radius: 50%;
+}
+#limlight .fasion ul li .first img {
+  width: 100%;
+}
+
+#limlight .fasion ul li .first .icon img {
+  width: 100%;
+  display: block;
+}
+#limlight .fasion .left{
+  margin-top: 6%;
+  display: flex;
+  justify-content: space-between;
+
+}
+#limlight .fasion .left  h3 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #3c4242;
+}
+
+#limlight .fasion .left  a {
+  font-weight: 700;
+  font-size: 14px;
+  color:#3c4242;
+  padding: 4px;
+  border-radius: 5px;
+  background-color:#fff;
+}
+
+#limlight .fasion ul li a.right {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  margin-top: -25%;
+}
+#feedback {
+  margin-top: 5%;
+  display: flex;
+}
+#feedback .title img {
+  color: #8a33fd;
+  height: 37px;
+}
+#feedback .title h1 {
+  margin-top: -42px;
+  margin-left: 24px;
+  font-size: 34px;
+  font-weight: 600;
+
+}
+#feedback ul {
+  display: flex;
+  margin-top: 40px;
+}
+#feedback ul li {
+  border: 2px solid #bebcbd;
+  border-radius: 10px;
+  padding: 30px;
+  width:100%;
+  margin-right: 20px;
+}
+#feedback ul li:last-child {
+  margin-right: 0;
+}
+#feedback ul li .img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#feedback ul li .img .super {
+  margin-top: -40px;
+}
+
+#feedback ul li h1 {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #3c4242;
+}
+#feedback ul li p {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #807d7e;
+}
+
+#feedback div.dots{
+  margin-left: 47%;
+	margin-top: 10px;
+}
+footer {
+  width: 100%;
+  margin-top: 3%;
+  background-color: #3c4242;
+}
+footer .top {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+footer .top .about {
+  padding-top: 3%;
+}
+footer .top .about h1 {
+  color: #f6f6f6;
+  font-weight: 700;
+  font-size: 29px;
+}
+footer .top .about ul li {
+  margin-top: 20px;
+}
+
+footer .top .about ul li a {
+  color: #f6f6f6;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+footer .top .about h5 {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 40px;
+}
+footer .top .about p {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 40px;
+}
+footer .icon {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5%;
+}
+footer .icon .left {
+  padding-top: 6%;
+  width: 22%;
+  padding-left: 5%;
+}
+footer .icon .left a {
+  margin-left: 6px;
+}
+footer .icon .left a span.icon-facebook {
+  background-color: #f6f6f6;
+  padding: 12px 8px;
+  border-radius: 28%;
+}
+
+footer .icon .left a span.icon-instagram {
+  background-color: #f6f6f6;
+  padding: 12px 8px;
+  border-radius: 28%;
+}
+footer .icon .left a span.icon-twitter {
+  background-color: #f6f6f6;
+  padding: 12px 8px;
+  border-radius: 28%;
+}
+footer .icon .left a span.icon-linkedin {
+  background-color: #f6f6f6;
+  padding: 12px 8px;
+  border-radius: 28%;
+}
+footer .icon .left a span.icon-facebook:hover {
+  color: #fff;
+  background-color: #4267b2;
+}
+footer .icon .left a span.icon-instagram:hover {
+  color: #fff;
+  background: radial-gradient(
+    circle at 33% 100%,
+    #fed373 4%,
+    #f15245 30%,
+    #d92e7f 62%,
+    #9b36b7 85%,
+    #515ecf
+  );
+}
+footer .icon .left a span.icon-twitter:hover {
+  color: #fff;
+  background-color: #1da1f2;
+}
+footer .icon .left a span.icon-linkedin:hover {
+  background-color: #0e76a8;
+  color: #fff;
+}
+footer .icon .right {
+  padding-right: 5%;
+}
+footer .icon .right h4 {
+  color: #f6f6f6;
+  font-weight: 700;
+  font-size: 29px;
+}
+footer .icon .right .store {
+  display: flex;
+}
+footer .icon .right .store span.play {
+  display: flex;
+  margin-top: 30px;
+  background: #404040;
+  border-radius: 12px;
+  width: 150px;
+  height: 60px;
+  align-items: center;
+}
+footer .icon .right .store span.play a {
+  margin-right: 10px;
+}
+footer .icon .right .store span.play .google p {
+  padding-top: -20px;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 400;
+}
+footer .icon .right .store span.play .google h1 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+footer .icon .right .store span.mobile {
+  margin-left: 20px;
+  display: flex;
+  margin-top: 30px;
+  background: #404040;
+  border-radius: 12px;
+  width: 150px;
+  height: 60px;
+  align-items: center;
+}
+
+footer .icon .right .store span.mobile a {
+  margin-right: 15px;
+}
+footer .icon .right .store span.mobile .app p {
+  padding-top: -20px;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 400;
+}
+footer .icon .right .store span.mobile .app h1 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+}
+hr.new1 {
+  margin-top: 2%;
+  border-top: 1px dotted #bebcbd;
+  opacity: 40%;
+}
+footer .popular {
+  margin-top:3%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .popular .left h2 {
+  font-weight: 700px;
+  font-size: 28px;
+  color: #f6f6f6;
+}
+footer .popular .right {
+  padding-top: 9px;
+  width: 2%;
+}
+footer .popular .right a {
+  
+}
+footer .popular .right a img{
+  width: 100%;
+  
+}
+
+footer .bottom {
+  margin-top: 3%;
+}
+footer .bottom p {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 50px;
+}
+@media all and (max-width: 1280px) {
+  #spotlight {
+   background-position: right top -50px;
+  }
+  div.form {
+    width: 18%;
+  }
+    div.form button {
+      padding: 7px 9px;
+  }
+  header span ul li a img {
+    padding: 8px;
+  }
+  #spotlight .banner .contant {
+    padding-top: 6%;
+  }
+  #spotlight .banner .contant .overlay h5 {
+    font-size: 34px;
+    font-weight: 300;
+  }
+  #spotlight .banner .contant .overlay h1 {
+    font-size: 56px;
+  }
+  #spotlight .banner .contant .overlay h4 {
+    font-size: 37px;
+  }
+  #spotlight .banner a.button {
+    top: 80%;
+    font-size: 17px;
+  }
+  #spotlight span ul {
+    display: flex;
+    width: 96%;
+  }
+  #discount .summer .left {
+    width: 48%;
+    height: 305px;
+  }
+  #discount .summer .left ul li h6 {
+    font-size: 27px;
+  }
+  #discount .summer .left ul li h2 {
+    font-size: 34px;
+    padding-top: 20px;
+  }
+  #discount .summer .left ul li h3 {
+    padding-top: 30px;
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  #discount .summer .left ul li a.button {
+    font-size: 27px;
+  }
+  #discount .summer .right {
+    width: 48%;
+    height:296px;
+  }
+  #discount .summer .right ul li h6 {
+    font-size: 27px;
+    line-height: 1.6;
+  }
+  #discount .summer .right ul li h2 {
+    font-size: 34px;
+    padding-top: 14px;
+    line-height: 1.5;
+  }
+  #discount .summer .right ul li h3 {
+    padding-top: 10px;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  #discount .summer .right ul li a.button {
+    font-size: 27px;
+  }
+  #newarrival .title img {
+    color: #8a33fd;
+    height: 27px;
+  }
+  #newarrival .title h1 {
+    margin-top: -31px;
+    margin-left: 17px;
+    font-size: 27px;
+    font-weight: 600;
+  }
+  #newarrival div.details ul li h1 {
+    font-size: 22px;
+  }
+  #newarrival div.details ul li:first-child {
+    margin-top: 10%;
+    width: 2%;
+  }
+  #newarrival div.details ul li:last-child {
+    margin-top: 10%;
+    width: 2%;
+  }
+  #poster div.bottom div.left {
+    height: 500px;
+  }
+  #poster div.bottom div.right {
+    height: 500px;
+  }
+  #poster div.bottom div.left h1 {
+    font-size: 30px;
+  }
+  #poster div.bottom div.left p {
+   font-size: 20px;
+   line-height: 1.6;
+   margin-bottom: 10%;
+  }
+  #mens_category .title img {
+    color: #8a33fd;
+    height: 27px;
+  }
+  #mens_category .title h1 {
+    margin-top: -31px;
+    margin-left: 17px;
+    font-size: 27px;
+    font-weight: 600;
+  }
+  #mens_category div ul li span h3 {
+    font-size: 19px;
+  }
+  #mens_category div ul li span a {
+    margin-top: 6%;
+    width: 8%;
+  }
+  #mens_category div ul li a.explore {
+    font-size: 17px;
+  }
+  #women_category .title img {
+    color: #8a33fd;
+    height: 27px;
+}
+  #women_category span h1 {
+    margin-top: -31px;
+    margin-left: 17px;
+    font-size: 27px;
+    font-weight: 600;;
+  }
+  #women_category ul li a {
+    margin-top: 14px;
+  }
+  #women_category ul li span h3 {
+    font-size: 19px;
+ }
+  #women_category ul li a {
+    margin-top: 8%;
+    width: 8%;
+   }
+  #women_category ul li a.explore {
+    font-size: 17px;
+  }
+  #brand h1 {
+    font-size: 37px;
+  }
+  #brand p {
+    font-size: 17px;
+  }
+  #limlight .title img {
+    color: #8a33fd;
+    height: 27px;
+  }
+  #limlight span h1 {
+    margin-top: -31px;
+    margin-left: 17px;
+    font-size: 27px;
+    font-weight: 600;
+  }
+  #limlight .fasion .left h3 {
+    font-size: 14px;
+  }
+  #limlight .fasion ul li .icon {
+     left: 77%;
+  }
+  #limlight .fasion ul li a.right {
+     font-size: 13px;
+  }
+  #feedback .title img {
+    color: #8a33fd;
+    height: 27px;
+  }
+  #feedback .title h1 {
+    margin-top: -31px;
+    margin-left: 17px;
+    font-size: 27px;
+    font-weight: 600;
+  }
+  #feedback ul li {
+    width: 28%;
+    border: 2px solid #bebcbd;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  #feedback ul li h1 {
+    font-size: 24px;
+  }
+  #feedback ul li p {
+    font-size: 14px;
+  }
+  #feedback h1 a img {
+    margin-top: 1%;
+    margin-left: -12%;
+  }
+  footer .top .about h1 {
+    color: #f6f6f6;
+    font-weight: 700;
+    font-size: 25px;
+  }
+  footer .top .about ul li {
+    margin-top: 17px;
+  }
+  footer .top .about ul li a {
+    color: #f6f6f6;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  footer .top .about p {
+    font-size: 16px;
+  }
+  footer .popular .left h2 {
+    font-size: 24px;
+  }
+  footer .top .about p {
+    font-size: 15px;
+  }
+  footer .icon .left a {
+    margin-left: 2px;
+  }
+  footer .icon .right h4 {
+    font-size: 27px;
+  }
+  footer .popular .left h2 {
+    font-size: 22px;
+  }
+  footer .bottom p {
+    font-size: 17px;
+    padding-bottom: 30px;
+}
+}
+
+@media all and (max-width: 1080px) {
+  #spotlight .banner a.button {
+    font-size: 17px;
+  }
+  #spotlight span ul {
+    display: flex;
+    width: 78%;
+  }
+  #newarrival .title img {
+    color: #8a33fd;
+    height: 27px;
+  }
+  #newarrival .title h1 {
+    margin-top: -31px;
+    margin-left: 17px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  #newarrival div.details ul li h1 {
+    font-size: 16px;
+  }
+  #mens_category .title img {
+    color: #8a33fd;
+    height: 27px;
+  }
+  #mens_category .title h1 {
+    margin-top: -31px;
+    margin-left: 17px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  #mens_category div ul li span h3 {
+    font-size: 14px;
+  }
+  #mens_category div ul li span a {
+    margin-top: 4%;
+    width: 6%;
+  }
+  #women_category .title img {
+    color: #8a33fd;
+    height: 27px;
+  }
+  
+  #wommen_category .title h1 {
+    margin-top: -31px;
+    margin-left: 17px;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  #poster div.bottom div.left {
+    height: 450px;
+  }
+  #poster div.bottom div.right {
+    height: 450px;
+  }
+  #poster div.bottom .content {
+    margin-top: 16%;
+    margin-left: 10%;
+  }
+  #poster div.bottom div.left p {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 8%;
+  }
+  #mens_category div ul li span h3 {
+    font-size: 15px;
+  }
+  #mens_category div ul li a.explore {
+    font-weight: 500;
+    font-size: 13px;
+    color: #7f7f7f;
+  }
+  #mens_category div ul li span a {
+    margin-top: 3%;
+  }
+  #women_category ul li span h3 {
+    font-size: 15px;
+  }
+  #women_category ul li a.explore {
+    font-weight: 500;
+    font-size: 13px;
+    color: #7f7f7f;
+  }
+  #women_category ul li span a {
+    margin-top: -3%;
+  }
+  #limlight .fasion .left h3 {
+    font-size: 13px;
+  }
+  #limlight .fasion .left a {
+    font-size: 13px;
+  }
+  #feedback ul li .img .super {
+    margin-top: -40px;
+    width: 50%;
+  }
+  #feedback ul li h1 {
+    margin-top: 14%;
+    font-size: 18px;
+  }
+   #feedback ul li p {
+    font-size: 12px;
+  }
+  footer .top .about h1 {
+    font-size: 24px;
+  }
+  footer .top .about ul li a {
+    font-size: 15px;
+  }
+  footer .top .about p {
+    font-size: 14px;
+  }
+  footer .popular .left h2 {
+    font-size: 21px;
+  }
+  footer .icon .right .store span.play .google h1 {
+    font-size: 17px;
+  }
+  footer .icon .right .store span.mobile .app h1 {
+  font-size: 17px;
+  }
+}
+  
+@media all and (max-width: 980px) {
+  header h1.left {
+    padding-left: 5%;
+  }
+  div.form {
+    width: 19%;
+}
+  header span ul li a img {
+    padding: 7px;
+  }
+  header span {
+   padding-right: 1px
+  }
+  header nav.middle ul li {
+    margin-right: 13px;
+  }
+  #spotlight .banner .contant .overlay h4 {
+    margin-top: 35px;
+    font-size: 31px;
+  }
+  #spotlight .banner .contant .overlay h5 {
+    font-size: 27px;
+    font-weight: 300;
+  }
+  #spotlight .banner .contant .overlay h1 {
+  font-size: 47px;
+  }
+  #spotlight .banner a.button {
+    padding: 14px 56px;
+    font-size: 19px;
+    top: 68%;
+  }
+  #spotlight .banner a img {
+    color: #fff;
+    width: 100%;
+  }
+  #spotlight .banner span {
+    left: 50%;
+    bottom: 13%;
+  }
+  #discount .summer .left {
+    width: 100%;
+    margin-bottom: 30px;
+  
+  }
+  #discount .summer .left ul {
+    padding-left: 10%;
+    padding-top: 8%;
+  }
+  #discount .summer .left ul li h6 {
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff;
+  }
+  #discount .summer .right {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  #discount .summer .right ul {
+    padding-left: 10%;
+    padding-top: 6%;
+  }
+  #discount .summer .right ul li h6 {
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff;
+    line-height: 10px;
+  }
+  #discount .summer .right ul li h2 {
+    display: flex;
+    font-weight: 700;
+    font-size: 34px;
+    color: #fff;
+    padding-top: 31px;
+    line-height: 38px;
+  }
+  #discount .summer .right ul li h3 {
+    padding-top: 7px;
+    font-weight: 500;
+    font-size: 17px;
+    color: #fff;
+    padding-bottom: 26px;
+  }
+  #discount .summer .right ul li a.button {
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  #newarrival {
+    margin-top: 5%;
+  }
+  #newarrival div.details ul li:first-child {
+    margin-top: 10%;
+    width: 2%;
+  }
+  #newarrival div.details ul li:last-child {
+    margin-top: 10%;
+    width: 2%;
+  }
+  #poster div.bottom div.left {
+    height: 370px;
+  }
+  #poster div.bottom div.left h1 {
+    font-size: 22px;
+    line-height: 35px;
+  }
+  #poster div.bottom div.left p {
+    font-size: 15px;
+    line-height: 29px;
+    margin-bottom: 9%;
+  }
+  #poster div.bottom div.right {
+    height: 370px;
+  }
+  #poster div.bottom div.left a.button {
+    background-color: #fff;
+    padding: 10px 25px;
+    border: 1px solid #9b9b9b;
+    border-radius: 8px;
+  }
+  #mens_category div ul li span h3 {
+    font-size: 13px;
+  }
+  #mens_category div ul li span a {
+    width: 8%;
+  }
+  #mens_category div ul li a.explore {
+    font-size: 12px;
+  }
+  #mens_category .title h1 {
+    font-size: 22px;
+  }
+  #women_category span h1 {
+    font-size: 22px;
+  }
+  #women_category ul li span h3 {
+    font-size: 13px;
+  }
+  #women_category ul li a.explore {
+    font-size: 12px;
+  }
+  #women_category ul li span a {
+    margin-top: 4%;
+    width: 8%;
+  }
+  #brand {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  #brand h1 {
+    font-size: 34px;
+  }
+  #brand p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  #limlight span h1 {
+    font-size: 22px;
+  }
+  #limlight .fasion .left h3 {
+    font-size: 12px;
+  }
+  #limlight .fasion ul li {
+    width: 22%;
+  }
+  #limlight .fasion .left a {
+    display: none;
+  }
+  #limlight .fasion ul li a.right {
+    font-size: 12px;
+  }
+  #feedback .title h1 {
+    font-size: 22px;
+  }
+  #feedback ul {
+    flex-wrap: wrap;
+  }
+  #feedback ul li {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+  #feedback ul li:last-child{
+    margin-bottom: 0;
+  }
+  #feedback ul li h1 {
+    margin-top: 2%;
+    font-size: 22px;
+  }
+  #feedback ul li p {
+    font-size: 14px;
+  }
+  #feedback ul li .img .super {
+    width: 25%;
+  }
+  footer .top {
+    flex-wrap: wrap;
+  }
+  footer .top .about h1 {
+    font-size: 25px;
+   }
+   footer .top .about ul li a {
+    font-size: 17px;
+  }
+  footer .top .about ul.last{
+    padding-top: 4%;
+  }
+  footer .top .about h5 {
+    font-size: 17px;
+    line-height: 1;
+  }
+  footer .top .about p {
+    font-size: 15px;
+    line-height: 32px;
+    margin-top: -8px;
+  }
+  footer .icon{
+    margin-top: 30px;
+  }
+  footer .icon .left {
+    width: 50%;
+  }
+  footer .icon .right h4 {
+    font-size: 24px;
+  }
+  
+  footer .popular .right {
+  padding-top: 3px;
+  width: 3%;
+  }
+  footer .icon .right h4 {
+    font-size: 21px;
+  }
+  footer .icon .right .store {
+    margin-top: -15px;
+  }
+  footer .popular .left h2 {
+    font-size: 22px;
+  }
+  footer .bottom p {
+    font-size: 17px;
+  }
+}
+@media all and (max-width: 768px) {
+  header h1.left {
+    padding-left: 10%;
+  }
+  nav.middle{
+    display: none;
+  }
+  header span ul {
+    display: flex;
+  }
+
+  div.form {
+    width: 22%;
+    padding-right: 38%;
+  }
+  div.form button {
+    padding: 7px 22px;
+  }
+  header span {
+    display: none;
+  }
+  /* hover */
+  header .icons .details #hover h1 img {
+    display: block;
+  } 
+  header .icons .details #hover ul li span{
+    display:block;
+  }
+  #spotlight {
+    background-position: bottom 16px right;
+  }
+  #spotlight .banner a.button {
+    font-size: 15px;
+    top: 51%;
+  }
+  #spotlight {
+    background-position: top -29px;
+  }
+  #spotlight .banner .contant .overlay h5 {
+    font-size: 25px;
+  }
+  #spotlight .banner .contant .overlay h1 {
+    font-size: 42px;
+  }
+  #spotlight .banner .contant .overlay h4 {
+    font-size: 28px;
+  }
+  #spotlight .banner a.button {
+    top: 72%;
+  }
+  #spotlight .banner .contant {
+    padding-top: 12%;
+  }
+  #discount .summer .left {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 280px;
+  }
+  #discount .summer .right {
+     height: 260px;
+  }
+  #newarrival {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  #newarrival .title img {
+    color: #8a33fd;
+    height: 27px;
+  }
+  #newarrival .title h1 {
+    margin-top: -29px;
+    margin-left: 15px;
+    font-size: 24px;
+  }
+  #newarrival div.details {
+    margin-top: 4%;
+}
+  #newarrival div.details ul li {
+    width: 47.5%;
+  }
+  #newarrival div.details ul li h1 {
+    font-size: 18px;
+  }
+  #newarrival div.details ul li:first-child {
+    display: none;
+  }
+  #newarrival div.details ul li:last-child {
+    display: none;
+  }
+  #newarrival div.details ul li:nth-child(4){
+    margin-top: 20px;
+  }
+  #newarrival div.details ul li:nth-child(5){
+    margin-top: 20px;
+  }
+  #poster {
+    margin-top: 5%;
+    margin-bottom: 6%;
+  }
+  #poster div.bottom .content {
+    margin-top: 8%;
+    margin-left: 10%;
+  }
+  #poster div.bottom div.left h1 {
+    font-size: 22px;
+    line-height: 1.5;
+}
+  #poster div.bottom div.left {
+    height: 305px;
+    width: 100%;
+  }
+  #poster div.bottom div.left p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: -2%;
+  }
+  #poster div.bottom div.left a.button {
+    padding: 9px 27px;
+    font-size: 14px;
+  }
+  #poster div.bottom div.right {
+    display: none;
+  }
+  #mens_category {
+    margin-top: 7%;
+    margin-bottom: 6%;
+  }
+  #mens_category .title h1 {
+    margin-top: -29px;
+    margin-left: 15px;
+    font-size: 24px;
+  }
+  #mens_category div ul {
+    margin-top: 5%;
+  }
+  #mens_category div ul li {
+    width: 47.5%;
+  }
+  
+  #mens_category div ul li:nth-child(3) {
+    margin-top: 4%;
+  }
+  #mens_category div ul li:nth-child(4) {
+    margin-top: 4%;
+  }
+  #mens_category div ul li:nth-child(5) {
+    margin-top: 4%;
+  }
+  #mens_category div ul li:nth-child(6) {
+    margin-top: 4%;
+  }
+  #mens_category div ul li:nth-child(7) {
+    margin-top: 4%;
+  }
+  #mens_category div ul li:nth-child(8) {
+      margin-top: 4%;
+  }
+  #mens_category div ul li span h3 {
+    padding-top: 3%;
+    font-size: 17px;
+  }
+  #mens_category div ul li span a {
+    width: 5.5%;
+    margin-top: 5%;
+  }
+  #mens_category div ul li a.explore {
+    font-size: 14px;
+  }
+  /* ---------------------------------------- */
+  #women_category span h1 {
+    margin-top: -29px;
+    margin-left: 15px;
+    font-size: 24px;
+  }
+  #women_category ul li {
+    width: 47%;
+  }
+  #women_category ul li span h3 {
+    font-size: 17px;
+  }
+  #women_category ul li span a {
+    margin-top: 6%;
+    width: 5.5%;
+  }
+  #women_category ul li a.explore {
+    font-size: 14px;
+  }
+  #women_category ul li:nth-child(3){
+    margin-top: 4%;
+  }
+  #women_category ul li:nth-child(4){
+    margin-top: 4%;
+  }
+  /* --------------------------- */
+  #brand .logo ul li img {
+    height: 55%;
+    margin-bottom: 30%;
+  }
+  /* ---------------------------- */
+  #limlight .title img {
+    height: 27px;
+  }
+  #limlight span h1 {
+    margin-top: -29px;
+    margin-left: 15px;
+    font-size: 24px;
+  }
+  #limlight .fasion {
+    margin-top: 5%;
+  }
+  #limlight .fasion ul li {
+    width: 47%;
+  }
+  #limlight .fasion ul li .icon {
+    padding: 12px;
+  }
+  #limlight .fasion .left h3 {
+    font-size: 15px;
+  }
+  #limlight .fasion .left a {
+    display: block;
+    font-size: 13px;
+  }
+  #limlight .fasion ul li a.right {
+    font-size: 14px;
+  }
+  #limlight .fasion ul li:nth-child(3){
+    margin-top: 4%;
+  }
+  #limlight .fasion ul li:nth-child(4){
+    margin-top: 4%;
+  }
+  /* ----------------- */
+  #feedback .title img {
+    color: #8a33fd;
+    height: 27px;
+  }
+  #feedback .title h1 {
+    margin-top: -29px;
+    margin-left: 15px;
+    font-size: 24px;
+  }
+
+  #feedback ul {
+    margin-top: 5%;
+  }
+  #feedback ul li {
+    margin-bottom: 20px;
+  }
+  #feedback ul li .img .super {
+    width: 20%;
+  }
+  #feedback ul li h1 {
+    margin-top: 5%;
+    font-size: 24px;
+  }
+  #feedback ul li .img .super {
+    width: 22%;
+  }
+  #feedback ul li p {
+    font-size: 14px;
+  }
+  /* ------------------- */
+  footer .top .about h1 {
+    font-size: 22px;
+  }
+  footer .top .about ul li a {
+    font-size: 16px;
+  }
+  footer .icon .right {
+    padding-right: 0;
+  }
+  footer .icon .left a span.icon-facebook {
+    padding: 8px 5px
+  }
+  footer .icon .left a span.icon-instagram {
+    padding: 8px 5px
+  }
+  footer .icon .left a span.icon-twitter {
+    padding: 8px 5px
+  }
+  footer .icon .left a span.icon-linkedin {
+    padding: 8px 5px
+  }
+  footer .icon .right .store {
+    margin-top: -24px;
+  }
+  footer .popular .left h2 {
+    font-size: 20px;
+  }
+  footer .bottom p {
+    font-size: 15px;
+  }
+}
+@media all and (max-width: 640px) {
+  header h1.left {
+    padding-left: 14%;
+  }
+  header span ul {
+    display: none;
+  }
+  /* hover   */
+  div.form {
+    width: 26%;
+    padding-right: 34%;
+  }
+  header .icons .details #hover ul li span a {
+    padding: 3px 7px;
+  }
+  /* ---------------- */
+  #spotlight {
+    background-position: bottom 29px;
+  }
+  #spotlight .banner .contant {
+    padding-top: 10%;
+  }
+  #spotlight .banner a.button {
+    top: 74%;
+    padding:13px 35px;
+  }
+  #spotlight .banner span {
+    left: 53%;
+    bottom: 11%;
+  }
+  #spotlight span ul {
+    display: flex;
+    width: 68%;
+  }
+  #discount .summer .left {
+    height: 240px;
+  }
+  #discount .summer .left ul li h2 {
+    padding-top: 20px;
+    font-size: 32px;
+  }
+  #discount .summer .left ul li h3 {
+    padding-top: 19px;
+    padding-bottom: 50px;
+    font-size: 15px;
+  }
+  #discount .summer .left ul li a.button {
+    font-weight: 700;
+    font-size: 17px;
+  }
+  #discount .summer .right {
+    height: 230px;
+  }
+  #discount .summer .right ul li h2 {
+    font-size: 32px;
+    padding-top: 20px;
+    line-height: 1.2;
+  }
+  #discount .summer .right ul li h3 {
+    padding-top: 20px;
+    padding-bottom: 14px;
+    font-size: 15px;
+  }
+  #discount .summer .right ul li a.button {
+    font-size: 17px;
+  }
+  #poster {
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+  #poster div.bottom div.left {
+    width: 100%;
+  }
+  #poster div.bottom .content {
+    margin-top: 10%;
+  }
+  #poster div.bottom div.left h1 {
+    font-size: 22px;
+  }
+  #poster div.bottom div.left p {
+    font-size: 15px;
+  }
+  #brand {
+    margin-top: 8%;
+    margin-bottom: 8%;
+  }
+  #brand h1 {
+    font-size: 32px;
+  }
+  #brand p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  #brand .logo {
+    padding-left: 14%;
+    padding-top: 5%;
+    padding-right: 10%;
+  }
+  #brand .logo ul {
+    flex-wrap: wrap;
+  }
+  #brand ul li {
+    width: 48%;
+    height: 100px;
+  }
+  #brand .logo ul li img {
+    height: 65%;
+    margin-bottom: 0%;
+  }
+  #brand ul li:last-child{
+    display: none;
+  }
+  #limlight .fasion ul li {
+    width: 47.5%;
+  }
+  #limlight .fasion ul li .icon {
+    padding: 10px;
+  }
+  #limlight .fasion .left h3 {
+    font-size: 14px;
+  }
+  #limlight .fasion .left a {
+    font-size: 12px;
+  }
+  #limlight .fasion ul li a.right {
+    font-size: 13px;
+  }
+  #feedback ul li h1 {
+    margin-top: 5%;
+    font-size: 22px;
+  }
+  #feedback ul li p {
+    font-size: 12px;
+  }
+  #feedback ul li .img .super {
+    width: 24%;
+  }
+  footer .top .about h1 {
+    font-size: 24px;
+  }
+  footer .top .about ul li a {
+    font-size: 15px;
+  }
+  footer .top .about h5 {
+    font-size: 16px;
+    line-height: 1;
+  }
+  footer .top .about p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-top: -4px;
+  }
+  footer .popular .left h2 {
+    font-size: 17px;
+  }
+  footer .bottom p {
+    font-size: 14px;
+  }
+  footer .icon {
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  footer .icon .left {
+    width: 100%;
+  }
+  footer .icon .right {
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+  footer .icon .right .store {
+    margin-top: -19px;
+  }
+}
+@media all and (max-width: 540px) {
+  #spotlight {
+    background-position: bottom 29px right -91px;
+  }
+  #spotlight .banner .contant {
+    padding-top: 16%;
+  }
+  #spotlight .banner a.button {
+    padding: 12px 33px;
+  }
+  #spotlight .banner .contant .overlay h5 {
+    font-size: 22px;
+  }
+  #spotlight .banner .contant .overlay h1 {
+    font-size: 42px;
+  }
+  #spotlight .banner .contant .overlay h4 {
+    font-size: 24px;
+  }
+  #discount .summer .left {
+    width: 100%;
+    height: 250px;
+  }
+  #discount .summer .right {
+    width: 100%;
+    height: 250px;
+    margin-top: 3%;
+  }
+  #discount .summer .right ul li h2 {
+    font-size: 32px;
+    padding-top: 20px;
+    line-height: 1.2;
+  }
+  #discount .summer .right ul li h3 {
+    padding-top: 7px;
+    padding-bottom: 27px;
+  }
+  #discount {
+    margin-top: 0%;
+  }
+  #discount .summer .left ul {
+    padding-left: 10%;
+    padding-top: 8%;
+  }
+  #discount .summer .left ul li h3 {
+    padding-bottom: 15px;
+  }
+  #discount .summer .right ul {
+    padding-left: 10%;
+    padding-top: 6%;
+  }
+  #newarrival div.details ul li h1 {
+    font-size: 17px;
+  }
+  #mens_category div ul li span h3 {
+    font-size: 16px;
+    padding-top: 5%;
+  }
+  #mens_category div ul li a.explore {
+    font-size: 14px;
+  }
+  #mens_category div ul li span a {
+    margin-top: 5%;
+  }
+  #women_category ul li span h3 {
+    font-size: 16px;
+  }
+  #women_category ul li a.explore {
+    font-size: 14px;
+  }
+  #women_category ul li span a {
+    margin-top: 6%;
+    width: 6%;
+  }
+  #limlight .fasion ul li .icon {
+    padding: 8px;
+  }
+  #limlight .fasion .left h3 {
+    font-size: 13px;
+  }
+  #limlight .fasion .left a {
+    display: block;
+    font-size: 12px;
+  }
+  #limlight .fasion ul li a.right {
+    font-size: 12px;
+  }
+}
+@media all and (max-width: 480px) {
+  header h1.left a {
+    width: 85%;
+  }
+  div.form {
+    display: none;
+  }
+  header .icons .details #hover h1 {
+    padding-top: 5px;
+  }
+  #spotlight {
+    background-position: bottom 29px right -125px;
+  }
+  #spotlight .banner .contant {
+    padding-top: 20%;
+  }
+  #spotlight .banner .contant .overlay h5 {
+    font-size: 17px;
+  }
+  #spotlight .banner .contant .overlay h1 {
+    font-size: 34px;
+  }
+  #spotlight .banner .contant .overlay h4 {
+    font-size: 20px;
+  } 
+  #spotlight .banner a.button {
+    padding: 10px 27px;
+    font-size: 14px;
+  }
+  #spotlight span ul {
+    width: 60%;
+  }
+  #spotlight .banner a img.arrowleft {
+    height: 4%;
+    top: 42%;
+  }
+  #spotlight .banner a img.arrowright {
+    height: 4%;
+    top: 42%;
+  }
+  #discount .summer .left {
+    width: 100%;
+    height: 210px;
+  }
+  #discount .summer .left ul li h6 {
+    font-size: 16px;
+  }
+  #discount .summer .left ul li h2 {
+     font-size: 24px;
+     padding-top: 24px;
+  }
+  #discount .summer .left ul li h3 {
+    font-size: 14px;
+  }
+  #discount .summer .left ul li a.button {
+    font-size: 15px;
+  }
+  #discount .summer .right {
+     height: 200px;
+  }
+  #discount .summer .right ul {
+    padding-left: 10%;
+    padding-top: 10%;
+  }
+  #discount .summer .right ul li h6 {
+    font-size: 17px;
+  }
+  #discount .summer .right ul li h2 {
+     font-size: 22px;
+     margin-top: 13px;
+     padding-top: 8px;
+  }
+  #discount .summer .right ul li h3 {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 14px;
+  }
+  #discount .summer .right ul li a.button {
+    font-size: 15px;
+  }
+  #newarrival .title img {
+    color: #8a33fd;
+    height: 25px;
+  }
+  #newarrival .title h1 {
+    margin-top: -26px;
+    margin-left: 16px;
+    font-size: 20px;
+  }
+  #newarrival div.details {
+    margin-top: 7%;
+  }
+  #newarrival div.details ul li h1 {
+    font-size: 15px;
+  }
+  #poster div.bottom .content {
+    margin-top: 18%;
+  }
+  #poster div.bottom div.left h1 {
+    font-size: 17px;
+  }
+  #poster div.bottom div.left p {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  #poster div.bottom div.left a.button {
+    font-size: 13px;
+    padding: 9px 21px
+  }
+  #mens_category .title img {
+    height: 25px;
+  }
+  #mens_category .title h1 {
+    margin-top: -26px;
+    margin-left: 16px;
+    font-size: 20px;
+  }
+  #mens_category div ul {
+    margin-top: 7%;
+  }
+  #mens_category div ul li {
+    width: 47.5%;
+  }
+  #mens_category div ul li span h3 {
+    font-size: 13px;
+  }
+  #mens_category div ul li a.explore {
+    font-size: 12px;
+  }
+  #mens_category div ul li span a {
+    margin-top: 3%;
+    width: 7%;
+  }
+  #women_category .title img {
+    height: 25px;
+  }
+  #women_category span h1 {
+    margin-top: -26px;
+    margin-left: 16px;
+    font-size: 20px;
+  }
+  #women_category ul {
+    margin-top: 6%;
+  }
+  #women_category ul li {
+    width: 47.5%;
+  }
+  #women_category ul li span h3 {
+    font-size: 13px;
+  }
+  #women_category ul li span a {
+    margin-top: 4%;
+    width: 7%;
+  }
+  #women_category ul li a.explore {
+    font-size: 12px;
+  }
+  #limlight .fasion ul li .icon {
+    padding: 6px;
+  }
+  #limlight .fasion .left a {
+    display: none;
+  }
+  #feedback ul li h1 {
+    font-size: 20px;
+  }
+  #feedback ul li p {
+    font-size: 12px;
+  }
+  #feedback ul li .img .super {
+    width: 30%;
+  }
+  footer .top .about h1 {
+    font-size: 17px;
+  }
+  footer .top .about ul li a {
+    font-size: 12px;
+  }
+  footer .top .about h5 {
+    font-size: 13px;
+  }
+  footer .top .about p {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  footer .icon .right h4 {
+    font-size: 19px;
+  }
+  footer .icon .right .store span.play .google h1 {
+    font-size: 15px;
+  }
+  footer .icon .right .store span.mobile .app h1 {
+    font-size: 15px;
+  }
+  footer .popular .left h2 {
+    font-size: 15px;
+  }
+  footer .bottom p {
+    font-size: 12px;
+  }
+}
+@media all and (max-width: 360px) {
+  #menu-icon {
+    width: 5%;
+  }
+  #spotlight {
+    background-position: bottom 29px right -108px;
+  }
+  #discount .summer .left {
+    height: 200px;
+  }
+  #discount .summer .left ul li h6 {
+    font-size: 17px;
+  }
+  #discount .summer .left ul li h2 {
+    font-size: 24px;
+    padding-top: 12px;
+    line-height: 1.6;
+  }
+  #discount .summer .left ul li h3 {
+    font-size: 14px;
+  }
+  #discount .summer .left ul li a.button {
+    font-size: 15px;
+  }
+  #discount .summer .right {
+    height: 190px;
+  }
+  #discount .summer .right ul li h6 {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  #discount .summer .right ul li h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    padding-top: 2px;
+  }
+  #discount .summer .right ul li h3 {
+    padding-top: 14px;
+    padding-bottom: 11px;
+    font-size: 13px;
+  }
+  #discount .summer .right ul li a.button {
+    font-size: 14px;
+  }
+  #poster div.bottom div.left p {
+    margin-bottom: 3%;
+  }
+  footer .icon .right {
+    padding-left: 18px;
+  }
+}
